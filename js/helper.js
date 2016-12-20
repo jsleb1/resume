@@ -29,7 +29,7 @@ var HTMLwelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li class="flex-item list"><span class="white-text">%data%</span></li>';
 
-var downloadPDF = '<a href="JS_Resume.pdf" download="JSlebioda_Resume" class="download">Download PDF</a>';
+var downloadPDF = '<a href="JS_Resume.pdf" download="JSlebioda_Resume" class="download"><img src="images/PDF-Download-Button.png" alt="Download PDF" class="PDF"></a>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
