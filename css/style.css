@@ -1,0 +1,395 @@
+* {
+    max-width: 1200px;
+    margin: auto;
+}
+
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+    overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+    padding: 0 5%;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #f5a623;
+    line-height: 48px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 24px;
+    color: #999;
+    line-height: 29px;
+    padding: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
+}
+
+h4 {
+    font-weight: bold;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 17px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    padding: 10px 5%;
+}
+
+.date-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    display: inline-block;
+}
+
+.location-text {
+    font-style: italic;
+    font-size: 14px;
+    color: #999;
+    line-height: 16px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+p {
+    font-size: 14px;
+    color: #333;
+    line-height: 21px;
+}
+
+a {
+    color: #1199c3;
+    text-decoration: none;
+    margin-top: 10px;
+    display: block;
+}
+
+#topContacts {
+    float: left;
+    text-decoration: none;
+    width: 100%;
+}
+
+.welcome-message {
+    font-style: italic;
+    font-size: 16px;
+    color: #f3f3f3;
+    line-height: 24px;
+    margin-top: 5%;
+    width: 100%;
+}
+
+#skills-h3 {
+    color: #f5ae23;
+    margin-bottom: 0;
+}
+
+#skills {
+    display: block;
+    width: 100%;
+    margin-top: 0;
+}
+
+.list {
+    display: flex;
+    width: 100%;
+}
+
+
+.download {
+    width: 128px;
+    float: right;
+    margin-top: 1.3%;
+    font-size: .8em;
+}
+
+.orange {
+    background-color: #f5ae23;
+}
+
+.orange-text {
+    color: #f5ae23;
+}
+
+.white-text {
+    font-weight: bold;
+    color: #fff;
+}
+
+.gray {
+    background-color: #f3f3f3;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.dark-gray {
+    background-color: #4a4a4a;
+}
+
+/* TODO: Replace with image later */
+#header {
+    background-color: #484848;
+}
+
+.flex-box {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.headerName {
+    display: block;
+    float: left;
+    margin: 0 3% 0 0;
+    padding: 0;
+    vertical-align: bottom;
+    width: 100%;
+}
+
+.role {
+    display: block;
+    color: white;
+    font-size: 1.5em;
+    text-align: left;
+    margin: 0;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 76%;
+    margin: auto;
+}
+
+.flex-item {
+    display: inline;
+    padding: 0;
+    margin: auto;
+}
+
+.center-content {
+    padding: 2.5% 5%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.biopic {
+    display: block;
+    float: left;
+    padding: 10px;
+    width: 200px;
+}
+
+img {
+    padding: 10px;
+}
+
+span {
+    padding: 5px;
+}
+
+#lets-connect {
+    text-align: center;
+}
+
+/* Work Section */
+
+.workDescription {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/* Education Section */
+
+.onlineHead {
+    text-align: left;
+    margin-top: 20px;
+    padding-left: 0;
+    color: #888;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+    #lets-connect {
+        margin-top: 5%;
+    };
+}
+
+@media only screen and (max-width:900px) {
+    .biopic {
+        width: 175px;
+    };
+}
+
+@media only screen and (max-width: 750px) {
+    #lets-connect {
+        margin-top: 10%;
+    }
+
+    .biopic {
+        width: 150px;
+        margin: auto;
+    }
+
+    .welcome-message {
+        display: none;
+    }
+
+    #skills-h3 {
+        font-size: 1em;
+        margin: 9% auto 0;
+        padding-bottom: 0;
+    }
+
+    #skills {
+        display: block;
+        font-size: .8em;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        line-height: 1.3em;
+    };
+}
+
+#map {
+    display: block;
+    height: 100%;
+    margin: 0 5%;
+}
+
+#mapDiv {
+    height: 400px;
+    width: 100%;
+    padding-bottom: 5%;
+    overflow-y: hidden;
+}
+
+@media only screen and (min-width: 750px) {
+    #skills-h3,
+  .biopic {
+        display: block;
+    };
+}
+
+@media only screen and (max-width: 650px) {
+    #skills-h3 {
+        font-size: 1.1em;
+        padding-bottom: 0;
+    }
+
+    #skills {
+        font-size: .9em;
+    }
+
+    .list {
+        display: block;
+    }
+
+    .download {
+        font-size: .7em;
+        width: 110px;
+        margin-top: 2.5%;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .contact {
+        font-size: .9em;
+    }
+
+    #skills-h3 {
+        font-size: .9em;
+        margin: 17% auto 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    #skills {
+        display: block;
+        font-size: .8em;
+        width: 40%;
+        float: right;
+        margin: auto;
+        padding: 0;
+        line-height: 1.3em;
+    }
+
+    .download {
+        font-size: .5em;
+        width: 80px;
+        margin-top: 3%;
+    }
+
+    .role {
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    #name {
+        font-size: 2em;
+    }
+
+    #skills-h3 {
+        font-size: .8em;
+        margin: 23% auto 0;
+        padding-bottom: 0;
+        text-align: center;
+    }
+
+    #skills {
+        display: block;
+        font-size: .7em;
+        width: 40%;
+        float: right;
+        margin: auto;
+        padding: 0;
+        line-height: 1.3em;
+    }
+
+    .biopic {
+        width: 130px;
+        margin: auto;
+    }
+}
