@@ -165,7 +165,6 @@ a {
     background-color: #4a4a4a;
 }
 
-/* TODO: Replace with image later */
 #header {
     background-color: #484848;
 }
@@ -254,6 +253,62 @@ span {
     color: #888;
 }
 
+/*Project Section */
+
+#projectSection {
+    background-color: #484848;
+}
+
+.project-entry {
+    margin: auto;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 10px;
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background-color: #484848;
+}
+
+#projectDescription {
+    max-width: 300px;
+    text-align: center;
+    height: 40px;
+}
+
+#projectPhoto {
+    width:300px;
+    height: 300px;
+}
+
+#projectTitle {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 7px;
+    padding: 0;
+    display: flex;
+    text-align: center;
+}
+
+#projectLink {
+    margin: 0;
+    padding: 0;
+    margin-right: 5px;
+    margin-left: 25%;
+    vertical-align: bottom;
+}
+
+#projectDate {
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+}
 /* Media queries to handle various device widths */
 
 @media only screen and (max-width: 1024px) {
@@ -320,6 +375,7 @@ span {
 
 @media only screen and (max-width: 650px) {
     #skills-h3 {
+        margin: 12% auto 0;
         font-size: 1.1em;
         padding-bottom: 0;
     }
@@ -350,7 +406,7 @@ span {
 
     #skills-h3 {
         font-size: .9em;
-        margin: 17% auto 0;
+        margin: 18% auto 0;
         padding-bottom: 0;
         text-align: center;
     }

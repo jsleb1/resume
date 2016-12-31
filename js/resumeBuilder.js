@@ -191,15 +191,15 @@ work.display();
 
 var projects = {
     "projects": [{
-        "title": "Sample Project #1",
+        "title": "Portfolio",
         "dates": "Dec. 2016",
-        "description": "A new project!",
-        "images": ["images/flower2.jpg"],
+        "description": "A portfolio website built using responsive/mobile design.",
+        "images": ["images/portfolio.png"],
     }, {
-        "title": "Sample Project #2",
+        "title": "Arcade Game",
         "dates": "Dec. 2016",
-        "description": "A new project!",
-        "images": ["images/shelter1.jpg"],
+        "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
+        "images": ["images/arcade.png"],
     }, {
         "title": "Sample Project #3",
         "dates": "Dec. 2016",
@@ -213,10 +213,9 @@ projects.display = function() {
         $("#projects").append(HTMLprojectStart);
 
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
-        $(".project-entry:last").append(formattedTitle);
-
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
-        $(".project-entry:last").append(formattedDates);
+        var formattedTitleDates = formattedTitle + formattedDates;
+        $(".project-entry:last").append(formattedTitleDates);
 
         var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
         $(".project-entry:last").append(formattedDescription);
