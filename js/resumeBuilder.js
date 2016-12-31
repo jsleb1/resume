@@ -201,10 +201,10 @@ var projects = {
         "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
         "images": ["images/arcade.png"],
     }, {
-        "title": "Sample Project #3",
+        "title": "Simple Meme Maker",
         "dates": "Dec. 2016",
-        "description": "A new project!",
-        "images": ["images/swingset1.jpg"],
+        "description": "So, you want to make Memes?",
+        "images": ["images/memes.png"],
     }]
 };
 
