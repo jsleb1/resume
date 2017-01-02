@@ -319,7 +319,7 @@ span {
     text-align: center;
 }
 
-#projectLink {
+#projectLink, #projSource {
     color: #f5ae23;
     margin: 0;
     padding: 0;
@@ -328,8 +328,14 @@ span {
     vertical-align: bottom;
 }
 
-#projectLink:hover {
+#projectLink:hover, #projSource:hover {
     color: white;
+}
+
+#projSource {
+    color: #f5ae23;
+    margin: auto;
+    padding: 0;
 }
 
 #projectDate {

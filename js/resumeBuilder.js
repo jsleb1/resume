@@ -126,19 +126,22 @@ var projects = {
         "dates": "Dec. 2016",
         "description": "A portfolio website built using responsive/mobile design.",
         "images": ["images/portfolio.png"],
-        "url": "https://jsleb1.github.io/portfolio"
+        "url": "https://jsleb1.github.io/portfolio",
+        "source": "https://github.com/jsleb1/portfolio"
     }, {
         "title": "Arcade Game",
         "dates": "Dec. 2016",
         "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
         "images": ["images/arcade.png"],
-        "url": "https://jsleb1.github.io/ArcadeGame"
+        "url": "https://jsleb1.github.io/ArcadeGame",
+        "source": "https://github.com/jsleb1/ArcadeGame"
     }, {
         "title": "Simple Meme Maker",
         "dates": "Dec. 2016",
         "description": "So, you want to make Memes?",
         "images": ["images/memes.png"],
-        "url": "https://jsleb1.github.io/resume"
+        "url": "https://jsleb1.github.io/resume",
+        "source": "https://github.com/jsleb1/portfolio"
     }]
 };
 
@@ -159,6 +162,9 @@ projects.display = function() {
             var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[j]);
             $(".project-entry:last").append(formattedImage);
         }
+
+        var formattedSource = HTMLprojectSource.replace("#", projects.projects[i].source);
+        $(".project-entry:last").append(formattedSource);
     }
 };
 

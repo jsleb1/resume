@@ -29,13 +29,14 @@ var HTMLwelcomeMsg = '<div class="welcome-message">%data%</div>';
 var HTMLskillsStart = '<h3 id="skills-h3">Skills at a Glance:</h3><ul id="skills" class="flex-column"></ul>';
 var HTMLskills = '<li class="flex-item list"><span class="white-text">%data%</span></li>';
 
-var downloadPDF = '<a href="JS_Resume.pdf" download="JSlebioda_Resume" class="download"><img src="images/PDF-Download-Button.png" alt="Download PDF" class="PDF"></a>';
+var downloadPDF = '<a href="Jeffery-Slebioda.pdf" download="Jeffery-Slebioda" class="download"><img src="images/PDF-Download-Button.png" alt="Download PDF" class="PDF"></a>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
 var HTMLprojectTitle = '<div id="projectTitle"><a href="#" id="projectLink">%data%</a>';
 var HTMLprojectDates = '<span id="projectDate" class="date-text date"> - %data%</span></div>';
 var HTMLprojectDescription = '<p id="projectDescription">%data%</p>';
 var HTMLprojectImage = '<img src="%data%" id="projectPhoto">';
+var HTMLprojectSource = '<a href="#" id="projSource">Source Code</a>'
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#" id="workTitle">%data%';
