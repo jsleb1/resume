@@ -244,13 +244,25 @@ span {
     margin-top: 0;
 }
 
+#workTitle {
+    color: #f5ae23;
+}
+
 /* Education Section */
+
+#schoolName {
+    color: #f5ae23;
+}
 
 .onlineHead {
     text-align: left;
     margin-top: 20px;
     padding-left: 0;
     color: #888;
+}
+
+#onlineName, #onlineURL {
+    color: #f5ae23;
 }
 
 /*Project Section */
@@ -308,11 +320,16 @@ span {
 }
 
 #projectLink {
+    color: #f5ae23;
     margin: 0;
     padding: 0;
     margin-right: 5px;
     margin-left: 25%;
     vertical-align: bottom;
+}
+
+#projectLink:hover {
+    color: white;
 }
 
 #projectDate {

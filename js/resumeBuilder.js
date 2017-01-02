@@ -126,16 +126,19 @@ var projects = {
         "dates": "Dec. 2016",
         "description": "A portfolio website built using responsive/mobile design.",
         "images": ["images/portfolio.png"],
+        "url": "https://jsleb1.github.io/portfolio"
     }, {
         "title": "Arcade Game",
         "dates": "Dec. 2016",
         "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
         "images": ["images/arcade.png"],
+        "url": "https://jsleb1.github.io/ArcadeGame"
     }, {
         "title": "Simple Meme Maker",
         "dates": "Dec. 2016",
         "description": "So, you want to make Memes?",
         "images": ["images/memes.png"],
+        "url": "https://jsleb1.github.io/resume"
     }]
 };
 
@@ -143,7 +146,8 @@ projects.display = function() {
     for (var i = 0; i < projects.projects.length; i++) {
         $("#projectSection").append(HTMLprojectStart);
 
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+        var projectTitleURL = HTMLprojectTitle.replace("#", projects.projects[i].url);
+        var formattedTitle = projectTitleURL.replace("%data%", projects.projects[i].title);
         var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
         var formattedTitleDates = formattedTitle + formattedDates;
         $(".project-entry:last").append(formattedTitleDates);
