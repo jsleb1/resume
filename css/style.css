@@ -257,6 +257,14 @@ span {
 
 #projectSection {
     background-color: #484848;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#projectH2 {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
 }
 
 .project-entry {
@@ -267,19 +275,22 @@ span {
     width: 350px;
     display: flex;
     flex-wrap: wrap;
+    background-color: #484848;
 }
 
-#projects {
+/* #projects {
     display: flex;
     flex-wrap: wrap;
     margin: auto;
     background-color: #484848;
-}
+} */
 
 #projectDescription {
-    max-width: 300px;
+    width: 95%;
     text-align: center;
     height: 40px;
+    color: white;
+    margin: auto;
 }
 
 #projectPhoto {

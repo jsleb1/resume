@@ -118,6 +118,48 @@ education.display = function() {
 
 education.display();
 
+// Display project information
+
+var projects = {
+    "projects": [{
+        "title": "Portfolio",
+        "dates": "Dec. 2016",
+        "description": "A portfolio website built using responsive/mobile design.",
+        "images": ["images/portfolio.png"],
+    }, {
+        "title": "Arcade Game",
+        "dates": "Dec. 2016",
+        "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
+        "images": ["images/arcade.png"],
+    }, {
+        "title": "Simple Meme Maker",
+        "dates": "Dec. 2016",
+        "description": "So, you want to make Memes?",
+        "images": ["images/memes.png"],
+    }]
+};
+
+projects.display = function() {
+    for (var i = 0; i < projects.projects.length; i++) {
+        $("#projectSection").append(HTMLprojectStart);
+
+        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
+        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
+        var formattedTitleDates = formattedTitle + formattedDates;
+        $(".project-entry:last").append(formattedTitleDates);
+
+        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
+        $(".project-entry:last").append(formattedDescription);
+
+        for (var j = 0; j < projects.projects[i].images.length; j++) {
+            var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[j]);
+            $(".project-entry:last").append(formattedImage);
+        }
+    }
+};
+
+projects.display();
+
 // Display previous work history
 
 var work = {
@@ -186,49 +228,6 @@ work.display = function() {
 };
 
 work.display();
-
-// Display project information
-
-var projects = {
-    "projects": [{
-        "title": "Portfolio",
-        "dates": "Dec. 2016",
-        "description": "A portfolio website built using responsive/mobile design.",
-        "images": ["images/portfolio.png"],
-    }, {
-        "title": "Arcade Game",
-        "dates": "Dec. 2016",
-        "description": "A Frogger style arcade game built using Javascript/HTML/CSS.",
-        "images": ["images/arcade.png"],
-    }, {
-        "title": "Simple Meme Maker",
-        "dates": "Dec. 2016",
-        "description": "So, you want to make Memes?",
-        "images": ["images/memes.png"],
-    }]
-};
-
-projects.display = function() {
-    for (var i = 0; i < projects.projects.length; i++) {
-        $("#projects").append(HTMLprojectStart);
-
-        var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[i].title);
-        var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[i].dates);
-        var formattedTitleDates = formattedTitle + formattedDates;
-        $(".project-entry:last").append(formattedTitleDates);
-
-        var formattedDescription = HTMLprojectDescription.replace("%data%", projects.projects[i].description);
-        $(".project-entry:last").append(formattedDescription);
-
-        for (var j = 0; j < projects.projects[i].images.length; j++) {
-            var formattedImage = HTMLprojectImage.replace("%data%", projects.projects[i].images[j]);
-            $(".project-entry:last").append(formattedImage);
-        }
-    }
-};
-
-projects.display();
-
 
 // Map showing previous work locations
 $("#mapDiv").append(googleMap);

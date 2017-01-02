@@ -31,18 +31,18 @@ var HTMLskills = '<li class="flex-item list"><span class="white-text">%data%</sp
 
 var downloadPDF = '<a href="JS_Resume.pdf" download="JSlebioda_Resume" class="download"><img src="images/PDF-Download-Button.png" alt="Download PDF" class="PDF"></a>';
 
+var HTMLprojectStart = '<div class="project-entry"></div>';
+var HTMLprojectTitle = '<div id="projectTitle"><a href="#" id="projectLink">%data%</a>';
+var HTMLprojectDates = '<span id="projectDate" class="date-text date"> - %data%</span></div>';
+var HTMLprojectDescription = '<p id="projectDescription">%data%</p>';
+var HTMLprojectImage = '<img src="%data%" id="projectPhoto">';
+
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p class="workDescription">%data%</p>';
-
-var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<div id="projectTitle"><a href="#" id="projectLink">%data%</a>';
-var HTMLprojectDates = '<span id="projectDate" class="date-text date"> - %data%</span></div>';
-var HTMLprojectDescription = '<p id="projectDescription">%data%</p>';
-var HTMLprojectImage = '<img src="%data%" id="projectPhoto">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="#">%data%';
