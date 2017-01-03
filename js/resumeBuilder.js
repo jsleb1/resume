@@ -140,8 +140,8 @@ var projects = {
         "dates": "Dec. 2016",
         "description": "So, you want to make Memes?",
         "images": ["images/memes.png"],
-        "url": "https://jsleb1.github.io/resume",
-        "source": "https://github.com/jsleb1/portfolio"
+        "url": "https://jsleb1.github.io/Meme-Maker",
+        "source": "https://github.com/jsleb1/Meme-Maker"
     }]
 };
 

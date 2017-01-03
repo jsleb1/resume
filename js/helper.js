@@ -36,7 +36,7 @@ var HTMLprojectTitle = '<div id="projectTitle"><a href="#" id="projectLink">%dat
 var HTMLprojectDates = '<span id="projectDate" class="date-text date"> - %data%</span></div>';
 var HTMLprojectDescription = '<p id="projectDescription">%data%</p>';
 var HTMLprojectImage = '<img src="%data%" id="projectPhoto">';
-var HTMLprojectSource = '<a href="#" id="projSource">Source Code</a>'
+var HTMLprojectSource = '<a href="#" id="projSource"><em>Source Code</em></a>'
 
 var HTMLworkStart = '<div class="work-entry"></div>';
 var HTMLworkEmployer = '<a href="#" id="workTitle">%data%';
