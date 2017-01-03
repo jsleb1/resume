@@ -337,6 +337,7 @@ span {
     margin: auto;
     margin-bottom: 10px;
     padding: 0;
+    font-size: .8em;
 }
 
 #projectDate {
