@@ -6,7 +6,7 @@ var bio = {
         "mobile": "716-444-8078",
         "email": "JSleb1@yahoo.com",
         "github": "JSleb1",
-        "location": "Lancaster, NY",
+        "location": "Raleigh, NC",
     },
     "welcomeMessage": "I'm currently seeking employment in a web development role \
                             that will allow me to put my current skills to good use, while \
