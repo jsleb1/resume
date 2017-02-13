@@ -8,10 +8,7 @@ var bio = {
         "github": "JSleb1",
         "location": "Raleigh, NC",
     },
-    "welcomeMessage": "I'm currently seeking employment in a web development role \
-                            that will allow me to put my current skills to good use, while \
-                            also challenging me and allowing me to expand my knowledge of various \
-                            technologies.",
+    "welcomeMessage": "I'm a self-motivated, proactive individual dedicated to the consistent acquisition of new skills through self-directed learning.",
     "skills": ["HTML5", "CSS3/BootStrap", "JavaScript/JQuery", "Version-Control/GIT", "Communication", "Problem Solving"],
     "biopic": "images/selfie2.jpg"
 };
